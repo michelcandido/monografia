@@ -1,7 +1,7 @@
 import org.junit.Test;
 
 public class CalcularMediaTest {
-	
+
 	public void validarNota() {
 		
 	}

@@ -5,17 +5,17 @@ import org.junit.Test;
  *
  */
 public class NotaTest {
-	@Test
+	
 	public void validarNotaIncorreta() {
 		
 	}
 	
-	@Test
+	
 	public void validarValorValidoNota() {
 		
 	}
 	
-	@Test
+	
 	public void validarExecaoDaNota() {
 		
 	}
