@@ -1,24 +1,27 @@
+import org.junit.Assert;
 import org.junit.Test;
-/**
- * 
- * @author Michel Candido
- *
- */
+
+import exception.ArgumentOutOfBoundsException;
+
 public class NotaTest {
 	
-	public void validarNotaIncorreta() {
-		
+	@Test(expected=ArgumentOutOfBoundsException	.class)
+	public void validarNota1IncorretaMenorZero() {
+		Nota nota = new Nota();
+		nota.setNota1(-1);
 	}
 	
-	
-	public void validarValorValidoNota() {
-		
+	@Test(expected=ArgumentOutOfBoundsException	.class)
+	public void validarNota1IncorretaMaiorDez() {
+		Nota nota = new Nota();
+		nota.setNota1(11);
 	}
 	
-	
-	public void validarExecaoDaNota() {
-		
+	@Test
+	public void validarNota1Correta(){
+		Nota nota = new Nota();
+		nota.setNota1(5);
+		Assert.assertEquals(0,
+				Double.compare(5, nota.getNota1()));
 	}
-	
-	
 }
