@@ -14,7 +14,7 @@ public class NotaTest {
 	@Test(expected=ArgumentOutOfBoundsException	.class)
 	public void validarNota1IncorretaMaiorDez() {
 		Nota nota = new Nota();
-		nota.setNota1(9);
+		nota.setNota1(11);
 	}
 	
 	@Test
